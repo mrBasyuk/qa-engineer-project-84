@@ -52,7 +52,7 @@ status: pass
 
 summary: |
     Проверка работы сайта в мобильной версии
-status: pass
+status: fail
 
 summary: |
     Проверка работы сайта на уязвимость
