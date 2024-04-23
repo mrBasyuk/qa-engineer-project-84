@@ -7,8 +7,8 @@ prerequisites:
 test-data: |
    Language = Russian
 steps:
-  - Кликаем мышью по полю с названием Language
-  - В выпадающем списке нажимаем на Russian
+  - Нажимаем по полю с названием "Language"
+  - В выпадающем списке выбираем "Russian"
 expected-result: |
      При смене языка все основные поля сайта, а так же описание товара меняют язык на выбранный. Внешний вид остается преждним
     
@@ -295,7 +295,7 @@ requirement: |
 prerequisites:
     В браузере открыта страница https://hexlet-products-store.vercel.app/ Язык сайта выбран Русский
 test-data: |
-Товар - iPhone 9
+    Товар - iPhone 9
 steps:
   - Наживаем клавишу F12
   - Выбираем вкладку "Network"
@@ -312,7 +312,7 @@ requirement: |
 prerequisites:
     В браузере открыта страница https://hexlet-products-store.vercel.app/ Язык сайта выбран Русский
 test-data: |
-Товар - iPhone 9
+    Товар - iPhone 9
 steps:
   - В поле с товаром iPhone 9 жмём на кнопку "В корзину".  В верхнем правом углу у Поля "Корзина" появилась цифра 1
   - Жмём на кнопку "Корзина"
@@ -327,7 +327,7 @@ requirement: |
 prerequisites:
     В браузере открыта страница https://hexlet-products-store.vercel.app/ Язык сайта выбран Русский
 test-data: |
-Товар = iPhone 9
+    Товар = iPhone 9
 steps:
   - В поле с товаром iPhone 9 жмём на кнопку "В корзину".  В верхнем правом углу у Поля "Корзина" появилась цифра 1
   - Жмём на кнопку "Корзина"
@@ -344,9 +344,9 @@ requirement: |
 prerequisites:
     В браузере открыта страница https://hexlet-products-store.vercel.app/ Язык сайта выбран Русский
 test-data: |
- Товар = iPhone 9
- почта = aaa@aaa.aa
- телефон = 111111
+    Товар = iPhone 9
+    почта = aaa@aaa.aa
+    телефон = 111111
 steps:
   - В поле с товаром iPhone 9 жмём на кнопку "В корзину".  В верхнем правом углу у Поля "Корзина" появилась цифра 1
   - Жмём на кнопку "Корзина"
