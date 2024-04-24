@@ -45,7 +45,7 @@ status: pass
 
 - summary: |
     Проверка чек-бокса "В наличии"
-status: pass
+status: fail
 
 - summary: |
     Проверка подсчета общей суммы товаров в корзине
