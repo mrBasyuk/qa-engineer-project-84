@@ -32,7 +32,7 @@ status: pass
 
 summary: |
     Проверка карточки товара
-status: pass
+status: fail
 
 summary: |
     Проверка оформления заказа
