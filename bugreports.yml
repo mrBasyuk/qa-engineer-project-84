@@ -1,146 +1,147 @@
-summary: |
+---
+- summary: |
     Не работает смена языка
-environment: | 
+  environment: | 
     Yandex   124.1.5.803 (Официальная сборка) (64 бит)  
     ОС Windows 10 Pro 19045.4291
-steps-to-reproduce: |
+  steps-to-reproduce: |
     1. Заходим на страницу магазина https://hexlet-products-store.vercel.app/
     2. Нажать по полю с названием "Language"
     3. В выпадающем списке нажать "Russian"
-expected-result: |
+  expected-result: |
     При смене языка все основные поля сайта, а так же описание товара меняют язык на выбранный. Внешний вид остается преждним
-actual-result: |
+  actual-result: |
     Язык не меняется в категориях товара,а так же в описании товара
     Ошибка изображена на скриншоте - qa-engineer-project-84/Не работает смена языка.jpg
 
-summary: |
+- summary: |
     Нельзя менять главную фотографию в карточке товара
-environment: | 
+  environment: | 
     Yandex   124.1.5.803 (Официальная сборка) (64 бит)  
     ОС Windows 10 Pro 19045.4291
-steps-to-reproduce: |
+  steps-to-reproduce: |
     1. Заходим на страницу магазина https://hexlet-products-store.vercel.app/
     2. Нажать по полю с товаром "MacBook Pro"
     3. В карточке товара нажимаем на фото под главным 
-expected-result: |
+  expected-result: |
     При открытии карточки товара сайт показывает нам более крупное фото товара с описанием,рейтингом,ценой,размером скидки и кнопкой "В корзину". Другие фото в профиле товара должны переключаться.
-actual-result: |
+  actual-result: |
     В профиле товара не переключаются фотографии
     
-summary: |
+- summary: |
     Нельзя оформить заказ.Данные не уходят на сервер
-environment: | 
+  environment: | 
     Yandex   124.1.5.803 (Официальная сборка) (64 бит)  
     ОС Windows 10 Pro 19045.4291
-steps-to-reproduce: |
+  steps-to-reproduce: |
     1. Заходим на страницу магазина https://hexlet-products-store.vercel.app/ 
     2. В поле с товаром iPhone 9 жмём на кнопку "Add to cart"
     3. Жмём на кнопку "Cart"
     4. Жмём клавишу F12 
     5. Переходим в вкладку Network
     6. Жмём на кнопку "Checkout"
-expected-result: |
+  expected-result: |
     При добавлении товара в корзину его можно оформить как успешный - появляется сообщение "Order placed successfully" с оформленным заказом и общей суммой.Данные о заказе уходят на сервер
-actual-result: |
+  actual-result: |
     Данные о заказе не уходят на сервер. Статус ошибки - 500
     Ошибка изображена на скриншоте - qa-engineer-project-84/Нельзя оформить заказ.Данные не уходят на сервер.jpg
 
-summary: |
+- summary: |
     Сайт не адаптирован под мобильные устройства
-environment: | 
+  environment: | 
     Yandex   124.1.5.803 (Официальная сборка) (64 бит)  
     ОС Windows 10 Pro 19045.4291
-steps-to-reproduce: |
+  steps-to-reproduce: |
     1. Заходим на страницу магазина https://hexlet-products-store.vercel.app/
     2. Заходим в режим разработчика с помощью клавиши "F12"
     3. Заходим в Responsive Design Mode через сочетание клавиш  Ctrl + Shift + M
     4. Устанавливаем ширину пикселей - 375
-expected-result: |
+  expected-result: |
     При открытии сайта через мобильное устройство элементы сайта должны корректно подстраиваться под разрешение экрана пользователя
-actual-result: |
-     В мобильной версии элементы сайта наезжают друг на друга
-     Ошибка изображена на скриншотах: qa-engineer-project-84/Сайт не адаптирован под мобильные устройства 1.jpg
-                                      qa-engineer-project-84/Сайт не адаптирован под мобильные устройства 2.jpg
-                                      qa-engineer-project-84/Сайт не адаптирован под мобильные устройства 3.jpg
-                                      qa-engineer-project-84/Сайт не адаптирован под мобильные устройства 4.jpg
+  actual-result: |
+    В мобильной версии элементы сайта наезжают друг на друга
+    Ошибка изображена на скриншотах: qa-engineer-project-84/Сайт не адаптирован под мобильные устройства 1.jpg
+    qa-engineer-project-84/Сайт не адаптирован под мобильные устройства 2.jpg
+    qa-engineer-project-84/Сайт не адаптирован под мобильные устройства 3.jpg
+    qa-engineer-project-84/Сайт не адаптирован под мобильные устройства 4.jpg
 
-summary: |
+- summary: |
     Сайт не сохраняет файлы cookies
-environment: | 
+  environment: | 
     Yandex   124.1.5.803 (Официальная сборка) (64 бит)  
     ОС Windows 10 Pro 19045.4291
-steps-to-reproduce: |
+  steps-to-reproduce: |
     1. Заходим на страницу магазина https://hexlet-products-store.vercel.app/
     2. В поле с товаром iPhone 9 жмём на кнопку "Add to card".
     3. Жмём на кнопку "Cart"
     4. Открываем новую вкладку с главной страницей магазина
     5. В новой вкладке жмём клавишу F5
     6. Жмём клавишу F12 и проверяем наличие cookies
-expected-result: |
+  expected-result: |
     При добавлении товара в корзину и открытии новой вкладки товар должен сохранится в корзине.Сайт должен сохранять файлы cookies
-actual-result: |
+  actual-result: |
     При открытии новой вкладки сайт забывает пользователя и то, что он добавлял в корзину.Файлы cookies не сохраняются
 
-summary: |
+- summary: |
     Товар нельзя оплатить
-environment: | 
+  environment: | 
     Yandex   124.1.5.803 (Официальная сборка) (64 бит)  
     ОС Windows 10 Pro 19045.4291
-steps-to-reproduce: |
+  steps-to-reproduce: |
     1. Заходим на страницу магазина https://hexlet-products-store.vercel.app/
     2. В поле с товаром iPhone 9 жмём на кнопку "Add to card".
     3. Жмём на кнопку "Cart"
     4. Жмём на кнопку "Checkout"
-expected-result: |
+  expected-result: |
     При оформлении заказа сайт должен предложить на выбор оплатить товар он-лайн либо наличными, при получении
-actual-result: |
+  actual-result: |
     При оформлении заказа сайт не предлагает оплату
 
-summary: |
+- summary: |
     Клиент не может оставить свои контакты для связи
-environment: | 
+  environment: | 
     Yandex   124.1.5.803 (Официальная сборка) (64 бит)  
     ОС Windows 10 Pro 19045.4291
-steps-to-reproduce: |
+  steps-to-reproduce: |
     1. Заходим на страницу магазина https://hexlet-products-store.vercel.app/
     2. В поле с товаром iPhone 9 жмём на кнопку "Add to card". 
     3. Жмём на кнопку "Cart"
     4. Жмём на кнопку "Checkout"
-expected-result: |
+  expected-result: |
     При оформлении заказа сайт должен запросить почту и телефон для связи с клиентом
-actual-result: |
+  actual-result: |
     При оформлении заказа сайт не запрашивает контакты для связи
 
-summary: |
+- summary: |
     Сайт не соответствует законодательству РФ "О персональных данных"
-environment: | 
+  environment: | 
     Yandex   124.1.5.803 (Официальная сборка) (64 бит)  
     ОС Windows 10 Pro 19045.4291
-steps-to-reproduce: |
+  steps-to-reproduce: |
     1. Заходим на страницу магазина https://hexlet-products-store.vercel.app/
     2. В поле с товаром iPhone 9 жмём на кнопку "Add to card". 
     3. Жмём на кнопку "Cart"
     4. Жмём на кнопку "Checkout"
     5. Вводим почту - aaa@aaa.aa
     6. Вводим телефон - 111111
-expected-result: |
+  expected-result: |
     При оформлении заказа и вводе клиентом своих контактов, сайт должен сообщать ему через чек-бокс с
     предупреждающим текстом о том, что пользователь соглашается на обработку персональных данных. 
     В тексте должна быть ссылка на пользовательское соглашение.
-actual-result: |
+  actual-result: |
     При предоставлении клиентом своих контактных данных сайт запрашивает подтверждение клиента на согласие на обработку персональных данных  
 
-summary: |
+- summary: |
     Trivial - Флажок английского языка без иконки флага
-environment: | 
+  environment: | 
     Yandex   124.1.5.803 (Официальная сборка) (64 бит)  
     ОС Windows 10 Pro 19045.4291
-steps-to-reproduce: |
+  steps-to-reproduce: |
     1. Заходим на страницу магазина https://hexlet-products-store.vercel.app/
     2. Нажимаем по полю с названием "Language"
     3. В выпадающем списке выбираем "English"
-expected-result: |
+  expected-result: |
     При выборе языка сайта у всех вариантов должны быть иконки флагов
-actual-result: |
+  actual-result: |
     При выборе языка English иконка флага отсутствует
     Ошибка изображена на скриншоте - qa-engineer-project-84/Trivial - Флажок английского языка без иконки флага.jpg
