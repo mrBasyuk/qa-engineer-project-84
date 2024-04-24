@@ -2,11 +2,11 @@
 test-cases:
   - summary: |    
       Проверка смены языка
-  status: fail
+    status: fail
 
   - summary: |
       Проверка возможности поиска товара по названию
-  status: pass
+    status: pass
 
   - summary: |
       Проверка возможности поиска товара по не существующему названию
